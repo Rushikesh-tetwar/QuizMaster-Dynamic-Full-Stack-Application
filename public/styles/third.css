@@ -1,0 +1,54 @@
+.third_pg_body {
+  background: url("../q.jpg") no-repeat center center / cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.third_pg_container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  max-width: 500px;
+}
+
+.third_pg_container button {
+  background: var(--danger-color);
+  color: var(--light-text);
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+  width: 100%;
+  min-height: 44px;
+}
+
+.third_pg_container button:hover {
+  background: #ff4757;
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .third_pg_container {
+    padding: 20px;
+  }
+  .third_pg_container button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

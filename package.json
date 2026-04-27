@@ -1,0 +1,20 @@
+{
+  "name": "quizmaster-dynamic-full-stack-application",
+  "version": "1.0.0",
+  "description": "Quiz Master App is a responsive, API-driven quiz platform enabling real-time question rendering and score tracking via lightweight JSON. It integrates a synchronized countdown timer and instant feedback loops with async JavaScript, delivering smooth, mobile-first interaction across browsers.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Rushikesh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

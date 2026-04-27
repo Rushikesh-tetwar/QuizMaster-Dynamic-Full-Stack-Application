@@ -1,0 +1,85 @@
+body {
+  font-family: "Poppins", "Arial", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  background-size: cover;
+  background-position: center;
+}
+
+.first_pg_container,
+.login-box,
+.quiz-container,
+.third_pg_container,
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+button,
+.first_pg_btn,
+.login_login-button,
+.final_score_btn,
+.final_score_btn_history,
+.third_pg_container button {
+  min-height: 44px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+.first_pg_btn:hover,
+.login_login-button:hover,
+.final_score_btn:hover,
+.final_score_btn_history:hover,
+.third_pg_container button:hover {
+  transform: translateY(-2px);
+  background: #e6d7f7;
+}
+
+input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .btn,
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .first_pg_container,
+  .login-box,
+  .quiz-container,
+  .third_pg_container,
+  .container {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}

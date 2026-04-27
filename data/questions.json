@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "questionObj": "What is the capital of France?",
+      "answers": [
+        { "text": "Berlin", "isCorrect": false },
+        { "text": "Madrid", "isCorrect": false },
+        { "text": "Paris", "isCorrect": true },
+        { "text": "Lisbon", "isCorrect": false }
+      ]
+    },
+    {
+      "questionObj": "What is 2 + 2?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "6", "isCorrect": false }
+      ]
+    },
+    {
+      "questionObj": "Which planet is known as the Red Planet?",
+      "answers": [
+        { "text": "Earth", "isCorrect": false },
+        { "text": "Mars", "isCorrect": true },
+        { "text": "Jupiter", "isCorrect": false },
+        { "text": "Saturn", "isCorrect": false }
+      ]
+    },
+    {
+      "questionObj": "What is the largest ocean on Earth?",
+      "answers": [
+        { "text": "Atlantic Ocean", "isCorrect": false },
+        { "text": "Indian Ocean", "isCorrect": false },
+        { "text": "Arctic Ocean", "isCorrect": false },
+        { "text": "Pacific Ocean", "isCorrect": true }
+      ]
+    }
+  ]
+}

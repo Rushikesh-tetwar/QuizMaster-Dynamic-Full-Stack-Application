@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Hub</title>
+    <!-- Link all CSS files -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/first.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/third.css" />
+    <link rel="stylesheet" href="styles/quiz.css" />
+    <!-- <link rel="stylesheet" href="styles/fresh.css" /> -->
+  </head>
+  <body>
+    <!-- First Page (Visible by default) -->
+    <section class="first_pg">
+      <nav class="first_pg_navbar">
+        <ul>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="first_pg_all">
+        <div class="first_pg_container">
+          <h1>Welcome to Quiz Hub</h1>
+          <p>Test your knowledge with fun and challenging quizzes!</p>
+          <button class="first_pg_btn">Login</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login Page (Hidden initially) -->
+    <section class="login_body hidden">
+      <div class="login-container">
+        <div class="login-box">
+          <h2>Login</h2>
+          <form id="login-form">
+            <div class="login_input-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="login_input-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="login_input-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" required />
+            </div>
+            <button type="submit" class="login_login-button">Log in</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Third Page (Hidden initially) -->
+    <section class="third_pg_body hidden">
+      <div class="third_pg_container">
+        <h1>Ready for the Quiz?</h1>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+    </section>
+
+    <!-- Quiz Page (Hidden initially) -->
+    <section class="quiz-container hidden">
+      <h1 id="question-container"></h1>
+      <div id="answer-buttons" class="btn-container"></div>
+      <button id="next-btn" class="btn hidden">Next</button>
+      <div id="score-container" class="hidden"></div>
+      <button class="final_score_btn hidden">Play Again</button>
+      <button class="final_score_btn_history hidden">History</button>
+    </section>
+    <footer id="timer" class="timer hidden"></footer>
+
+    <!-- Link JS -->
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

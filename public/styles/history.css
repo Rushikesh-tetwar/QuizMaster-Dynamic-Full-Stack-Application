@@ -1,0 +1,132 @@
+body {
+  background: url("../images35.jpeg") no-repeat center center / cover;
+  backdrop-filter: blur(3px);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  margin-top: auto;
+  font-family: "Poppins", "Arial", sans-serif;
+}
+
+.container {
+  background: linear-gradient(
+    135deg,
+    rgba(60, 28, 91, 0.7),
+    rgba(51, 7, 122, 0.9)
+  );
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 600px;
+  height: 540px; /* fixed height preserved */
+  border-radius: 1rem;
+  overflow-y: auto; /* vertical scroll */
+  scroll-behavior: smooth; /* smooth scrolling */
+  position: relative;
+  box-shadow: 0 0 25px #03e9f4, 0 0 10px #03e9f4;
+  animation: fadeIn 0.8s ease; /* subtle entry animation */
+}
+
+/* Custom scrollbar */
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+.container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+.container::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+.container::-webkit-scrollbar-thumb:hover {
+  background: #00c8d6;
+}
+
+h1 {
+  color: rgb(255, 227, 189);
+  text-align: center;
+  text-decoration: underline;
+  margin: 1rem 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.row {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease;
+}
+
+.row:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.name {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ff6b6b;
+  margin-right: 1rem;
+}
+
+.score {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-left: auto;
+  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4;
+  font-weight: bold;
+}
+
+.exit {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(255, 227, 189);
+  border-radius: 50%;
+  border: 2px solid rgba(0, 145, 255, 0.215);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.exit:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: rotate(90deg) scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .score {
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
